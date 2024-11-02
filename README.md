@@ -22,8 +22,8 @@ Create a recipe page that is responsive and looks good on all devices.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: <https://www.frontendmentor.io/solutions/using-media-query-to-make-the-page-responsive-YyKMtTIbV0>
+- Live Site URL: <https://kirlosbasta.github.io/recipe-page>
 
 ### Built with
 
