@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 400 700;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+  --brown800: hsl(14, 45%, 36%);
+  --rose800: hsl(332, 51%, 32%);
+  --rose50: hsl(330, 100%, 98%);
+  --main-margin: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--stone600);
+  background-color: var(--stone100);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--main-margin);
+  margin-bottom: var(--main-margin);
+  height: 100%;
+}
+
+.container {
+  width: 650px;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  color: var(--stone900);
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  color: var(--brown800);
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.preparation {
+  background-color: var(--rose50);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.preparation h2 {
+  font-family: "Outfit", sans-serif;
+  color: var(--rose800);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 650;
+}
+
+.preparation ul {
+  margin-left: 20px;
+}
+
+.preparation li {
+  padding-left: 20px;
+}
+.preparation li::marker {
+  color: var(--rose800);
+}
+
+.ingredients ul {
+  margin-left: 20px;
+}
+
+.ingredients li {
+  padding-left: 20px;
+}
+
+li::marker {
+  color: var(--brown800);
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.instructions ol {
+  margin-left: 20px;
+}
+
+.instructions li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.instructions li::marker {
+  font-weight: bolder;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  margin-top: 20px;
+}
+
+table tr {
+  border-bottom: 1px solid var(--stone150);
+}
+
+table tr:nth-last-child(1) {
+  border-bottom: none;
+}
+table th {
+  font-weight: normal;
+  padding: 7px 0;
+  padding-left: 30px;
+}
+table td {
+    color: var(--brown800);
+    font-weight: 600;
+}
+
+ul li::marker {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .container-padding {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  .recipe-image {
+    border-radius: 0;
+  }
+}
